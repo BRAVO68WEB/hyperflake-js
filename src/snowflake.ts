@@ -1,7 +1,6 @@
 import { DEFAULTS, getValidNodeId, waitUntilNextTimestamp } from './helpers';
 
 const SnowflakeId = () => {
-
   const workerId = DEFAULTS.WORKER_ID;
   const nodeIdBits = DEFAULTS.NODE_ID_BITS;
   const sequenceBits = DEFAULTS.SEQUENCE_BITS;
@@ -34,13 +33,13 @@ const SnowflakeId = () => {
       (BigInt(timestamp - epoch) << BigInt(nodeIdBits + sequenceBits)) |
       (BigInt(nodeId) << BigInt(sequenceBits)) |
       BigInt(sequence);
-    const snowflakeId = high
+    const snowflakeId = high;
 
     return snowflakeId.toString();
   }
 
   // Pass in a snowflake ID and get back timestamp
-  function decode(hfid: string){
+  function decode(hfid: string) {
     const high = BigInt(hfid);
     const timestamp = Number((high >> BigInt(nodeIdBits + sequenceBits)) + BigInt(epoch));
     return timestamp;
@@ -48,7 +47,7 @@ const SnowflakeId = () => {
 
   return {
     generate,
-    decode
+    decode,
   };
 };
 

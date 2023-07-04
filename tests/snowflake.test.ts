@@ -53,6 +53,6 @@ describe('snowflake', () => {
 
       expect(originalTimestamp).toBeTypeOf('number');
       expect(originalTimestamp).toBeGreaterThanOrEqual(currentTimestamp);
-    })
+    });
   });
 });
