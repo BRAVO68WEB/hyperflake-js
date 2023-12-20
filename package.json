@@ -1,6 +1,6 @@
 {
   "name": "hyperflake",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A simple and lightweight Node.js library to generate unique snowflake like IDs starting from beginning of the 21th century",
   "repository": {
     "type": "git",
