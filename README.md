@@ -93,7 +93,6 @@ This will return the timestamp when the ID was generated.
 
 Also you can head to [https://hyperflake-validator-ui.vercel.app](https://hyperflake-validator-ui.vercel.app) to validate your IDs using a simple Web UI.
 
-
 ## Error Handling 😱
 
 The SnowflakeId instance throws an error if the clock moves backwards, i.e., if the current timestamp is less than the last timestamp.
