@@ -1,13 +1,13 @@
 {
   "name": "hyperflake",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A simple and lightweight Node.js library to generate unique snowflake like IDs starting from beginning of the 21th century",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BRAVO68WEB/hyperflake.git"
+    "url": "https://github.com/BRAVO68WEB/hyperflake-js.git"
   },
-  "homepage": "https://github.com/BRAVO68WEB/hyperflake",
-  "bugs": "https://github.com/BRAVO68WEB/hyperflake/issues",
+  "homepage": "https://github.com/BRAVO68WEB/hyperflake-js",
+  "bugs": "https://github.com/BRAVO68WEB/hyperflake-js/issues",
   "author": {
     "name": "Jyotirmoy Bandyopadhayaya",
     "email": "hi@b68.dev",
@@ -55,5 +55,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "packageManager": "pnpm@9.8.0"
 }

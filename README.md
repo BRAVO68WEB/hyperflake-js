@@ -6,9 +6,9 @@
 
 <p  align="center">
 
-<a  href="https://github.com/BRAVO68WEB/Hyperflake/actions/workflows/test.yml">
+<a  href="https://github.com/BRAVO68WEB/hyperflake-js/actions/workflows/test.yml">
 
-<img  alt="Build states"  src="https://github.com/BRAVO68WEB/Hyperflake/actions/workflows/test.yml/badge.svg?branch=main">
+<img  alt="Build states"  src="https://github.com/BRAVO68WEB/hyperflake-js/actions/workflows/test.yml/badge.svg?branch=main">
 
 </a>
 
@@ -26,9 +26,9 @@
 
 <p  align="center">
 
-<a  href="https://github.com/BRAVO68WEB/hyperflake/issues/new?template=bug_report.md">Bug report</a>
+<a  href="https://github.com/BRAVO68WEB/hyperflake-js/issues/new?template=bug_report.md">Bug report</a>
 
-<a  href="https://github.com/BRAVO68WEB/hyperflake/issues/new?template=feature_request.md">Feature request</a>
+<a  href="https://github.com/BRAVO68WEB/hyperflake-js/issues/new?template=feature_request.md">Feature request</a>
 
 </p>
 
@@ -117,4 +117,4 @@ for (let i = 0; i < 10; i++) {
 
 ## Bugs or Requests 🐛
 
-If you encounter any problems feel free to open an [issue](https://github.com/bravo68web/hyperflake/issues/new?template=bug_report.md). If you feel the project is missing a feature, please raise a [ticket](https://github.com/bravo68web/hyperflake/new?template=feature_request.md) on GitHub and I'll look into it. Pull requests are also welcome.
+If you encounter any problems feel free to open an [issue](https://github.com/BRAVO68WEB/hyperflake-js/issues/new?template=bug_report.md). If you feel the project is missing a feature, please raise a [ticket](https://github.com/BRAVO68WEB/hyperflake-js/new?template=feature_request.md) on GitHub and I'll look into it. Pull requests are also welcome.

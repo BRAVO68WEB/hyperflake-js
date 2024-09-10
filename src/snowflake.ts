@@ -38,7 +38,6 @@ const SnowflakeId = () => {
     return snowflakeId.toString();
   }
 
-  // Pass in a snowflake ID and get back timestamp
   function decode(hfid: string) {
     const high = BigInt(hfid);
     const timestamp = Number((high >> BigInt(nodeIdBits + sequenceBits)) + BigInt(epoch));
