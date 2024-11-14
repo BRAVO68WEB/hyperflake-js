@@ -11,7 +11,7 @@ const SnowflakeId = () => {
   let nodeId = getValidNodeId(workerId, nodeIdBits);
   const maxSequence = (1 << sequenceBits) - 1;
 
-  function generate() {
+  function generate<T = bigint>() {
     let timestamp = Date.now();
 
     if (timestamp < lastTimestamp) {
@@ -35,12 +35,12 @@ const SnowflakeId = () => {
       BigInt(sequence);
     const snowflakeId = high;
 
-    return snowflakeId.toString();
+    // return snowflakeId.toString();
+    return snowflakeId as T;
   }
 
-  function decode(hfid: string) {
-    const high = BigInt(hfid);
-    const timestamp = Number((high >> BigInt(nodeIdBits + sequenceBits)) + BigInt(epoch));
+  function decode(hfid: bigint) {
+    const timestamp = Number((hfid >> BigInt(nodeIdBits + sequenceBits)) + BigInt(epoch));
     return timestamp;
   }
 
