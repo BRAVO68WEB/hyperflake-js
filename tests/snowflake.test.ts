@@ -9,7 +9,7 @@ describe('snowflake', () => {
     it('should generate a new id', () => {
       const id = snowflakeId.generate();
 
-      expect(id).toBeTypeOf('string');
+      expect(id).toBeTypeOf('bigint');
     });
 
     it('should not generate same id ever', () => {
@@ -31,7 +31,7 @@ describe('snowflake', () => {
     it('should generate a new id', () => {
       const id = snowflakeId.generate();
 
-      expect(id).toBeTypeOf('string');
+      expect(id).toBeTypeOf('bigint');
     });
 
     it('should not generate same id ever', () => {
@@ -53,6 +53,23 @@ describe('snowflake', () => {
 
       expect(originalTimestamp).toBeTypeOf('number');
       expect(originalTimestamp).toBeGreaterThanOrEqual(currentTimestamp);
+    });
+
+    it('should return original timestamp for multiple ids', () => {
+      const currentTimestamp = Date.now();
+      const ids = new Set();
+      const maxIds = 10000;
+
+      for (let i = 0; i < maxIds; ++i) {
+        const id = snowflakeId.generate();
+        ids.add(snowflakeId.decode(id));
+      }
+
+      expect(ids.size).toEqual(maxIds);
+      ids.forEach((timestamp) => {
+        expect(timestamp).toBeTypeOf('number');
+        expect(timestamp).toBeGreaterThanOrEqual(currentTimestamp);
+      });
     });
   });
 });
